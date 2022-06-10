@@ -13,16 +13,22 @@ npm install -g https://github.com/giapdong/php_auto_reload#main
 	"commands": [
 		{
 			"match": ".*",
-			"cmd": "php_auto_reload pub -c <your_mqtt_channel>"
+			"cmd": "<Command run script>"
 		}
 	]
 }
 
 ```
 
-# Client connect MQTT
+# Client connect MQTT reference
 
 http://www.steves-internet-guide.com/using-javascript-mqtt-client-websockets/
 
 https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket
+
 https://www.emqx.io/docs/en/v4.3/development/javascript.html#mqtt-js-usage-example
+
+
+# Match pattern
+
+https://developer.chrome.com/docs/extensions/mv3/match_patterns/

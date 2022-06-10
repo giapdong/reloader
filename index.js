@@ -3,7 +3,7 @@ const mqtt = require('mqtt')
 const clientId = 'mqttjs_' + Math.random().toString(16).substr(2, 8)
 
 const host = 'wss://broker.emqx.io:8084/mqtt'
-const topic = 'giapdong_topic_test_ksjdkfmdkjd';
+const topic = '__MY_TOPIC_PLACEHOLDER__'
 
 const options = {
 	keepalive: 30,

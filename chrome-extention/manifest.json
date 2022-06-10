@@ -9,7 +9,7 @@
 	},
 	"content_scripts": [
 		{
-			"matches": ["https://*.base.beta", "https://true.success.beta/*"],
+			"matches": ["https://www.google.com/"],
 			"run_at": "document_end",
 			"js": ["mqtt.js", "content.js"]
 		}
