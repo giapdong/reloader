@@ -1,0 +1,17 @@
+{
+	"name": "PHP Auto reload assistant",
+	"description": "What a surprise!",
+	"version": "1.0",
+	"manifest_version": 3,
+	"permissions": ["storage", "activeTab", "scripting", "tabs"],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://*.base.beta", "https://true.success.beta/*"],
+			"run_at": "document_end",
+			"js": ["mqtt.js", "content.js"]
+		}
+	]
+}
