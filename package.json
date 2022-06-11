@@ -1,6 +1,6 @@
 {
-  "name": "php_auto_reload",
-  "version": "0.0.1",
+  "name": "reloader",
+  "version": "0.0.5",
   "description": "Tool auto reload for php project",
   "scripts": {},
   "author": "Giap Dong",

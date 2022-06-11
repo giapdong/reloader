@@ -1,6 +1,6 @@
 {
-	"name": "PHP Auto reload assistant",
-	"description": "What a surprise!",
+	"name": "Reloader",
+	"description": "Reload assistant",
 	"version": "1.0",
 	"manifest_version": 3,
 	"permissions": ["storage", "activeTab", "scripting", "tabs"],

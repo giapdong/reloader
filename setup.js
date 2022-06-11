@@ -6,9 +6,9 @@ const TOPIC_PLACEHOLDER = '__MY_TOPIC_PLACEHOLDER__'
 function replaceTopic() {
 
 	let new_topic = 'custom_' + Math.random().toString(16).substr(2, 8) + '.' + Date.now()
-	let extension_content = fs.readFileSync(path.join(__dirname, 'chrome-extention/content.js'), {encoding: "utf8"})
+	let extension_content = fs.readFileSync(path.join(__dirname, 'chrome-extension/content.js'), {encoding: "utf8"})
 	extension_content = extension_content.replace(TOPIC_PLACEHOLDER, new_topic)
-	fs.writeFileSync(path.join(__dirname, 'chrome-extention/content.js'), extension_content, {encoding: 'utf8'})
+	fs.writeFileSync(path.join(__dirname, 'chrome-extension/content.js'), extension_content, {encoding: 'utf8'})
 
 	let index_content = fs.readFileSync(path.join(__dirname, './index.js'), {encoding: "utf8"})
 	index_content = index_content.replace(TOPIC_PLACEHOLDER, new_topic)
