@@ -1,6 +1,10 @@
 # Install
 
-Clone this repo and run `npm install`
+```bash
+git clone git@github.com:giapdong/reloader.git
+cd reloader
+npm install
+```
 
 # Setup
 
