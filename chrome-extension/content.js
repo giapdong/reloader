@@ -41,7 +41,14 @@ client.on('connect', function() {
 
 client.on('message', function(topic, message, packet) {
 	console.log('Received Message: ' + message.toString() + '\nOn topic: ' + topic);
-	location.reload();
+
+	chrome.runtime.sendMessage('get-enable', ({ enable }) => {
+		if (!enable) {
+			return;
+		}
+
+		location.reload();
+	});
 });
 
 client.on('close', function() {

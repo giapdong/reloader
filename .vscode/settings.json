@@ -12,7 +12,7 @@
 			},
 			{
 				"match": "\\.js$",
-				"cmd": "node C:\\Users\\admin\\Project\\php-auto-reload\\index.js"
+				"cmd": "node C:\\Users\\admin\\Project\\reloader\\index.js"
 			},
 			{
 				"match": ".*",

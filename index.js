@@ -37,7 +37,11 @@ client.on('reconnect', () => {
 client.on('connect', () => {
 	console.log('Client connected:' + clientId)
 	client.subscribe(topic, { qos: 0 })
-	client.publish(topic, 'ws connection demo...!', { qos: 0, retain: false })
+	client.publish(topic, 'ws connection demo...!', { qos: 0, retain: false }, function() {
+		setTimeout(() => {
+			process.exit();
+		}, 2000);
+	})
 })
 
 client.on('message', (topic, message, packet) => {

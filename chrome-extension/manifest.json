@@ -4,6 +4,9 @@
 	"version": "1.0",
 	"manifest_version": 3,
 	"permissions": ["storage", "activeTab", "scripting", "tabs"],
+	"action": {
+		"default_popup": "./popup/popup.html"
+	},
 	"background": {
 		"service_worker": "background.js"
 	},
